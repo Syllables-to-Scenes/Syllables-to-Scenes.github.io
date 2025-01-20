@@ -30,10 +30,12 @@
     <title>Webpage</title>
     <style>
         /* 缩放整个页面 */
-        html {
-            transform: scale(0.5); /* 设定缩放比例，0.8为缩小至80%的大小 */
-            transform-origin: top left; /* 设置缩放的起始点为页面的左上角 */
-            width: 125%; /* 扩大页面宽度，以保证缩放后不丢失内容 */
+        html, body {
+            transform: scale(0.5); /* 设定缩放比例 */
+            transform-origin: top center; /* 正确设置缩放的起始点 */
+            margin: 0;  /* 去掉默认外边距 */
+            padding: 0; /* 去掉默认内边距 */
+            height: 100%; /* 确保 html 和 body 高度填满整个页面 */
         }
 
         body {
@@ -652,14 +654,10 @@
 <!--            </section>-->
 <!--            &lt;!&ndash;End BibTex citation &ndash;&gt;-->
 
-            <h2 class="title"></h2>
+<!--            <h2 class="title"></h2>-->
 
 
-
-
-
-
-
+            
 </body>
 
 </html>
