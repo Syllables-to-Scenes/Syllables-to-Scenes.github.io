@@ -156,27 +156,30 @@
 
             <!-- GIF Section -->
             <div class="text-primary dark:text-white">
-                <div class="pt-4 image" style="filter: none">
-                    <div class="relative grid w-full text-xs sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base gap-2"
-                        style="display: flex; justify-content: center;">
-                        <div class="w-full h-full overflow-hidden"
-                            style="border-radius: 0.5rem; display: flex; justify-content: center;">
+                <div class="pt-4 image" style="filter: none;">
+                    <div class="relative w-full text-xs sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base gap-2"
+                        style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+
+                        <!-- 外部容器使用flex布局，并确保居中 -->
+                        <div class="w-full h-full overflow-hidden" style="border-radius: 0.5rem; display: flex; justify-content: center; align-items: center;">
                             <img src="./data/image/haiku7.gif" alt="Demo Animation"
-                                style="display: block; height: 60%; width: 100%; margin: 0 ;" />
+                                style="display: block; height: auto; width: 80%; margin: 0;" />
                         </div>
                     </div>
                 </div>
             </div>
+
             <!-- End GIF Section -->
             <div class="text-primary dark:text-white">
-                <div class="pt-4" style="filter: none">
-                    <div class="relative grid w-full text-xs sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base gap-2"
-                        style="display: flex; justify-content: center;">
-                        <!-- 修改为使用 flex 布局，并居中对齐 -->
-                        <div class="w-full h-full overflow-hidden" style="border-radius: 0.5rem; width: 100%;">
-                            <!-- 设置 width: 100%; 以使用整个容器宽度 -->
+                <div class="pt-4" style="filter: none;">
+                    <div class="relative w-full grid gap-2"
+                        style="display: flex; justify-content: center; align-items: center; flex-direction: column; width: 100%;">
+
+                        <!-- 使用 flex 布局并确保居中 -->
+                        <div class="w-full h-full overflow-hidden" style="border-radius: 0.5rem; width: 100%; display: flex; justify-content: center; align-items: center;">
+                            <!-- 设置 width: 80%; 以使用整个容器宽度 -->
                             <img src="./data/image/头图_00.png" alt="Method" style="
-                                width: 100%;  /* 使用父容器的宽度 */
+                                width: 80%;  /* 使用父容器的宽度 */
                                 height: auto; /* 高度按比例自适应 */
                                 object-fit: contain;
                                 transform-origin: center center;
@@ -186,12 +189,13 @@
                 </div>
             </div>
 
-            <div class="space-y-3 pt-10" id="Abstract">
-                <h1 class="text-primary font-sans text-3xl font-bold dark:text-white text-center">
+
+            <div class="space-y-3 pt-10" id="Abstract" style="display: flex; justify-content: center; align-items: center; flex-direction: column; width: 100%;">
+                <h1 class="text-primary font-sans font-bold dark:text-white text-center" style="font-size: 1.5rem; width: 80%;">
                     Abstract
                 </h1>
                 <p class="text-justify block font-normal"></p>
-                <p class="font-normal text-primary dark:text-white block text-justify">
+                <p class="font-normal text-primary dark:text-white block text-justify" style="width: 80%; text-align: justify;">
                     <span>
                         In the era of the metaverse, where immersive technologies redefine human experiences, translating abstract literary concepts into navigable 3D environments presents a fundamental challenge in preserving semantic and emotional fidelity. This research introduces HaikuVerse, a novel framework for transforming poetic abstraction into spatial representation, with Japanese Haiku serving as an ideal test case due to its sophisticated encapsulation of profound emotions and imagery within minimal text. While existing text-to-3D methods struggle with nuanced interpretations, we present a literary-guided approach that synergizes traditional poetry analysis with advanced generative technologies. Our framework centers on two key innovations: (1) Hierarchical Literary-Criticism Theory Grounded Parsing (H-LCTGP), which captures both explicit imagery and implicit emotional resonance through structured semantic decomposition, and (2) Progressive Dimensional Synthesis (PDS), a multi-stage pipeline that systematically transforms poetic elements into coherent 3D scenes through sequential diffusion processes, geometric optimization, and real-time enhancement. Extensive experiments demonstrate that HaikuVerse significantly outperforms conventional text-to-3D approaches in both literary fidelity and visual quality, establishing a new paradigm for preserving cultural heritage in immersive digital spaces.
                     </span>
@@ -199,38 +203,25 @@
             </div>
 
 
-            <div class="space-y-1 pt-10" id="Method">
-                <h1 class="text-primary font-sans text-3xl font-bold dark:text-white text-center">
+            <div class="space-y-1 pt-10" id="Method" style="display: flex; justify-content: center; align-items: center; flex-direction: column; width: 100%;">
+                <h1 class="text-primary font-sans font-bold dark:text-white text-center" style="font-size: 1.5rem; width: 80%;">
                     Method
                 </h1>
                 <p class="text-justify block font-normal"></p>
-<!--            </div>-->
-<!--            <div class="text-primary dark:text-white">-->
-<!--                <div class="pt-4" style="filter: none">-->
-<!--                    <div class="relative grid w-full text-xs sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base gap-2"-->
-<!--                        style="display: flex; justify-content: center;">-->
-<!--                        &lt;!&ndash; 修改为使用 flex 布局，并居中对齐 &ndash;&gt;-->
-<!--                        <div class="w-full h-full overflow-hidden" style="border-radius: 0.5rem; width: 100%;">-->
-<!--                            &lt;!&ndash; 设置 width: 100%; 以使用整个容器宽度 &ndash;&gt;-->
-<!--                            <img src="./data/image/pipline_00.png" alt="Method" class="w-full h-full"-->
-<!--                                style="-->
-<!--                                                                                                                                object-fit: contain; /* 修改为 contain 以确保图片内容完整展示 */-->
-<!--                                                                                                                                transform-origin: center center;-->
-<!--                                                                                                                            " />-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-            <div class="text-primary dark:text-white">
-                <div class="pt-4" style="filter: none">
-                    <div class="relative w-full text-xs sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base gap-2"
-                        style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <div class="text-primary dark:text-white" style="width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+
+                    <div class="pt-4" style="filter: none; width: 80%; display: flex; justify-content: center; align-items: center; flex-direction: column;">
 
                         <!-- 使用 figure 和 figcaption 包裹图片和描述 -->
-                        <figure class="w-full h-full overflow-hidden" style="border-radius: 0.5rem; width: 100%;">
+                        <figure class="w-full h-full overflow-hidden" style="border-radius: 0.5rem; width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+
                             <!-- 图片 -->
-                            <img src="./data/image/pipline_00.png" alt="Method" class="w-full h-full"
-                                style="object-fit: contain; transform-origin: center center;" />
+                            <img src="./data/image/pipline_00.png" alt="Method" style="
+                                object-fit: contain;  /* 保持图片比例，并确保其不会被剪裁 */
+                                object-position: center; /* 图片在容器中水平和垂直居中 */
+                                width: 100%;  /* 使用父容器的宽度 */
+                                height: auto; /* 高度按比例自适应 */
+                            " />
 
                             <!-- 图例描述 -->
                             <figcaption class="text-center font-normal text-primary dark:text-white mt-2">
@@ -249,102 +240,63 @@
                     </div>
                 </div>
             </div>
-            <div class="space-y-1 pt-10" id="Experiment">
-                <h1 class="text-primary font-sans text-3xl font-bold dark:text-white text-center">
+
+
+            <div class="space-y-1 pt-10" id="Experiment" style="display: flex; justify-content: center; align-items: center; flex-direction: column; width: 100%;">
+                <h1 class="text-primary font-sans font-bold dark:text-white text-center" style="font-size: 1.5rem; width: 80%;">
                     Experiment
                 </h1>
-                <p class="text-justify block font-normal"></p>
+                <p class="text-justify block font-normal text-center"></p> <!-- 这里加上text-center保持p元素居中 -->
             </div>
 
-            <h2 class="title"></h2>
-
+            <h2 class="title" style="text-align: center;"></h2> <!-- 让h2保持居中 -->
+            
             <!-- video start -->
             <section class="section" id="Video">
                 <div class="container is-max-desktop content">
-                    <h2 class="title"
-                        style="color: #363636; font-size: 2rem; font-weight: 600; line-height: 1.125; text-align: left">
-                        3D Scene Walkthrough</h2>
-                    <div style="text-align: center;">
-                        <style>
-                            .header {
-                                overflow: hidden;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                            }
-                        </style>
-                        <div class="header">
-                            <video src="./data/video/haiku1.mp4" width=100% height=60% controls muted>
-                            </video>
-                        </div>
+                    <h2 class="title" style="color: white; font-size: 1.25rem; font-weight: 600; line-height: 1.125; text-align: left;">
+                        3D Scene Walkthrough
+                    </h2>
+                    <div class="header" style="display: flex; justify-content: center; align-items: center;">
+                        <video src="./data/video/haiku1.mp4" style="width: 80%; height: auto;" controls muted></video>
                     </div>
                 </div>
             </section>
+
             <!-- video end -->
             <div style="margin-top: 30px;"></div>
-            <section class="section" id="Video2"> <!-- 修改ID，避免重复 -->
-                <div class="container is-max-desktop content">
 
-                    <div style="text-align: center;">
-                        <style>
-                            .header {
-                                overflow: hidden;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                            }
-                        </style>
-                        <div class="header">
-                            <video src="./data/video/haiku2.mp4" width=100% height=60% controls muted>
-                            </video>
-                        </div>
+            <!-- Video Section 2 -->
+            <section class="section" id="Video2">
+                <div class="container is-max-desktop content">
+                    <div class="header" style="display: flex; justify-content: center; align-items: center;">
+                        <video src="./data/video/haiku2.mp4" style="width: 80%; height: auto;" controls muted></video>
                     </div>
                 </div>
             </section>
             <div style="margin-top: 30px;"></div>
-            <section class="section" id="Video2"> <!-- 修改ID，避免重复 -->
-                <div class="container is-max-desktop content">
 
-                    <div style="text-align: center;">
-                        <style>
-                            .header {
-                                overflow: hidden;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                            }
-                        </style>
-                        <div class="header">
-                            <video src="./data/video/haiku4.mp4" width=100% height=60% controls muted>
-                            </video>
-                        </div>
+            <!-- Video Section 3 -->
+            <section class="section" id="Video3">
+                <div class="container is-max-desktop content">
+                    <div class="header" style="display: flex; justify-content: center; align-items: center;">
+                        <video src="./data/video/haiku4.mp4" style="width: 80%; height: auto;" controls muted></video>
                     </div>
                 </div>
             </section>
-
             <div style="margin-top: 30px;"></div>
-            <section class="section" id="Video2"> <!-- 修改ID，避免重复 -->
-                <div class="container is-max-desktop content">
 
-                    <div style="text-align: center;">
-                        <style>
-                            .header {
-                                overflow: hidden;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                            }
-                        </style>
-                        <div class="header">
-                            <video src="./data/video/hiaku9.mp4" width=100% height=60% controls muted>
-                            </video>
-                        </div>
+            <!-- Video Section 4 -->
+            <section class="section" id="Video4">
+                <div class="container is-max-desktop content">
+                    <div class="header" style="display: flex; justify-content: center; align-items: center;">
+                        <video src="./data/video/hiaku9.mp4" style="width: 80%; height: auto;" controls muted></video>
                     </div>
                 </div>
             </section>
 
             <div class="space-y-1 pt-10" id="more result">
-                <h1 class="text-primary font-sans text-3xl font-bold dark:text-white text-left">
+                <h1 class="title" style="color: white; font-size: 1.25rem; font-weight: 600; line-height: 1.125; text-align: left;">
                     Main results
                 </h1>
                 <p class="text-justify block font-normal"></p>
@@ -371,7 +323,7 @@
         </div>
 
             <div class="space-y-1 pt-10" id="more result">
-                <h1 class="text-primary font-sans text-3xl font-bold dark:text-white text-left">
+                <h1 class="title" style="color: white; font-size: 1.25rem; font-weight: 600; line-height: 1.125; text-align: left;">
                     Compare Results
                 </h1>
                 <p class="text-justify block font-normal"></p>
@@ -397,75 +349,188 @@
             </div>
 
 
-            <div class="space-y-1 pt-10" id="more result">
-                <h1 class="text-primary font-sans text-3xl font-bold dark:text-white text-left">
+<!--            <div class="space-y-1 pt-10" id="more result">-->
+<!--                <h1 class="title" style="color: white; font-size: 1.25rem; font-weight: 600; line-height: 1.125; text-align: left;">-->
+<!--                    More Results-->
+<!--                </h1>-->
+<!--                <p class="text-justify block font-normal"></p>-->
+<!--            </div>-->
+<!--            </section>-->
+<!--            <div class="text-primary dark:text-white">-->
+<!--                &lt;!&ndash; Vertical Images Carousel &ndash;&gt;-->
+<!--                <div class="vertical-carousel-container relative w-full overflow-hidden"-->
+<!--                    style="border-radius: 0.5rem; max-width: 1000px; margin: 0 auto; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">-->
+<!--                    <div class="vertical-carousel-wrapper flex transition-transform duration-500 ease-in-out"-->
+<!--                        style="width: 300%;">-->
+<!--                        &lt;!&ndash; Carousel Images &ndash;&gt;-->
+<!--                        <div class="vertical-carousel-slide" style="width: 33.333%; flex-shrink: 0;">-->
+<!--                            <div class="flex items-center justify-center" style="height: 450px; padding: 0 20px;">-->
+<!--                                <img src="./data/image/add_00.png" alt="Image 1"-->
+<!--                                    style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;" />-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="vertical-carousel-slide" style="width: 33.333%; flex-shrink: 0;">-->
+<!--                            <div class="flex items-center justify-center" style="height: 450px; padding: 0 20px;">-->
+<!--                                <img src="./data/image/add_01.png" alt="Image 2"-->
+<!--                                    style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;" />-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    &lt;!&ndash; Navigation Buttons &ndash;&gt;-->
+<!--                    <button-->
+<!--                        style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.3); color: white; width: 50px; height: 50px; border-radius: 50%; font-size: 24px; display: flex; align-items: center; justify-content: center; cursor: pointer; border: 2px solid rgba(255,255,255,0.4); z-index: 1000; backdrop-filter: blur(2px);"-->
+<!--                        class="vertical-carousel-button prev">-->
+<!--                        &#8592;-->
+<!--                    </button>-->
+<!--                    <button-->
+<!--                        style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.3); color: white; width: 50px; height: 50px; border-radius: 50%; font-size: 24px; display: flex; align-items: center; justify-content: center; cursor: pointer; border: 2px solid rgba(255,255,255,0.4); z-index: 1000; backdrop-filter: blur(2px);"-->
+<!--                        class="vertical-carousel-button next">-->
+<!--                        &#8594;-->
+<!--                    </button>-->
+
+<!--                    &lt;!&ndash; Add hover effect styles &ndash;&gt;-->
+<!--                    <style>-->
+<!--                        .vertical-carousel-button:hover {-->
+<!--                            background: rgba(0, 0, 0, 0.3) !important;-->
+<!--                            border-color: rgba(255, 255, 255, 0.7) !important;-->
+<!--                            transform: translateY(-50%) scale(1.1) !important;-->
+<!--                            backdrop-filter: blur(4px) !important;-->
+<!--                        }-->
+<!--                    </style>-->
+
+<!--                    &lt;!&ndash; Dots Navigation &ndash;&gt;-->
+<!--                    <div-->
+<!--                        class="vertical-carousel-dots absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3">-->
+<!--                        <button-->
+<!--                            class="vertical-dot w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition-all duration-200"></button>-->
+<!--                        <button-->
+<!--                            class="vertical-dot w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition-all duration-200"></button>-->
+<!--                        <button-->
+<!--                            class="vertical-dot w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition-all duration-200"></button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; 图例描述 &ndash;&gt;-->
+<!--                <figcaption class="text-center font-normal text-primary dark:text-white mt-2">-->
+<!--                    <strong>Additional Experimental Visualizations.</strong> Our provides further visual examples from our experiments, showcasing the effectiveness and versatility of our approach in various scenarios.-->
+<!--                </figcaption>-->
+<!--            </div>-->
+
+
+
+            <div class="space-y-1 pt-10" id="more-result">
+                <h1 class="title" style="color: white; font-size: 1.25rem; font-weight: 600; line-height: 1.125; text-align: left;">
                     More Results
                 </h1>
                 <p class="text-justify block font-normal"></p>
             </div>
-            </section>
-            <div class="text-primary dark:text-white">
-                <!-- Vertical Images Carousel -->
-                <div class="vertical-carousel-container relative w-full overflow-hidden"
-                    style="border-radius: 0.5rem; max-width: 1000px; margin: 0 auto; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                    <div class="vertical-carousel-wrapper flex transition-transform duration-500 ease-in-out"
-                        style="width: 300%;">
-                        <!-- Carousel Images -->
-                        <div class="vertical-carousel-slide" style="width: 33.333%; flex-shrink: 0;">
-                            <div class="flex items-center justify-center" style="height: 450px; padding: 0 20px;">
-                                <img src="./data/image/add_00.png" alt="Image 1"
-                                    style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;" />
-                            </div>
-                        </div>
-                        <div class="vertical-carousel-slide" style="width: 33.333%; flex-shrink: 0;">
-                            <div class="flex items-center justify-center" style="height: 450px; padding: 0 20px;">
-                                <img src="./data/image/add_01.png" alt="Image 2"
-                                    style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;" />
-                            </div>
+
+            <!-- Vertical Images Carousel -->
+            <div class="vertical-carousel-container relative w-full overflow-hidden"
+                style="border-radius: 0.5rem; max-width: 1000px; margin: 0 auto; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <div class="vertical-carousel-wrapper flex transition-transform duration-500 ease-in-out"
+                    style="width: 300%;">
+
+                    <!-- Carousel Images -->
+                    <div class="vertical-carousel-slide" style="width: 33.333%; flex-shrink: 0;">
+                        <div class="flex items-center justify-center" style="height: 450px; padding: 0 20px;">
+                            <img src="./data/image/add_00.png" alt="Image 1"
+                                style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;" />
                         </div>
                     </div>
-
-                    <!-- Navigation Buttons -->
-                    <button
-                        style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.3); color: white; width: 50px; height: 50px; border-radius: 50%; font-size: 24px; display: flex; align-items: center; justify-content: center; cursor: pointer; border: 2px solid rgba(255,255,255,0.4); z-index: 1000; backdrop-filter: blur(2px);"
-                        class="vertical-carousel-button prev">
-                        &#8592;
-                    </button>
-                    <button
-                        style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.3); color: white; width: 50px; height: 50px; border-radius: 50%; font-size: 24px; display: flex; align-items: center; justify-content: center; cursor: pointer; border: 2px solid rgba(255,255,255,0.4); z-index: 1000; backdrop-filter: blur(2px);"
-                        class="vertical-carousel-button next">
-                        &#8594;
-                    </button>
-
-                    <!-- Add hover effect styles -->
-                    <style>
-                        .vertical-carousel-button:hover {
-                            background: rgba(0, 0, 0, 0.3) !important;
-                            border-color: rgba(255, 255, 255, 0.7) !important;
-                            transform: translateY(-50%) scale(1.1) !important;
-                            backdrop-filter: blur(4px) !important;
-                        }
-                    </style>
-
-                    <!-- Dots Navigation -->
-                    <div
-                        class="vertical-carousel-dots absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3">
-                        <button
-                            class="vertical-dot w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition-all duration-200"></button>
-                        <button
-                            class="vertical-dot w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition-all duration-200"></button>
-                        <button
-                            class="vertical-dot w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition-all duration-200"></button>
+                    <div class="vertical-carousel-slide" style="width: 33.333%; flex-shrink: 0;">
+                        <div class="flex items-center justify-center" style="height: 450px; padding: 0 20px;">
+                            <img src="./data/image/add_01.png" alt="Image 2"
+                                style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;" />
+                        </div>
+                    </div>
+                    <div class="vertical-carousel-slide" style="width: 33.333%; flex-shrink: 0;">
+                        <div class="flex items-center justify-center" style="height: 450px; padding: 0 20px;">
+                            <img src="./data/image/add_02.png" alt="Image 3"
+                                style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;" />
+                        </div>
                     </div>
                 </div>
-                <!-- 图例描述 -->
-                <figcaption class="text-center font-normal text-primary dark:text-white mt-2">
-                    <strong>Additional Experimental Visualizations.</strong> Our provides further visual examples from our experiments, showcasing the effectiveness and versatility of our approach in various scenarios.
-                </figcaption>
+
+                <!-- Navigation Buttons -->
+                <button
+                    style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.3); color: white; width: 50px; height: 50px; border-radius: 50%; font-size: 24px; display: flex; align-items: center; justify-content: center; cursor: pointer; border: 2px solid rgba(255,255,255,0.4); z-index: 1000; backdrop-filter: blur(2px);"
+                    class="vertical-carousel-button prev">
+                    &#8592;
+                </button>
+                <button
+                    style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.3); color: white; width: 50px; height: 50px; border-radius: 50%; font-size: 24px; display: flex; align-items: center; justify-content: center; cursor: pointer; border: 2px solid rgba(255,255,255,0.4); z-index: 1000; backdrop-filter: blur(2px);"
+                    class="vertical-carousel-button next">
+                    &#8594;
+                </button>
+
+                <!-- Dots Navigation -->
+                <div
+                    class="vertical-carousel-dots absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3">
+                    <button
+                        class="vertical-dot w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition-all duration-200"></button>
+                    <button
+                        class="vertical-dot w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition-all duration-200"></button>
+                    <button
+                        class="vertical-dot w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition-all duration-200"></button>
+                </div>
             </div>
 
-            <div class="space-y-1 pt-10" id="more result">
-                <h1 class="text-primary font-sans text-3xl font-bold dark:text-white text-left">
+            <!-- 图例描述 -->
+            <figcaption class="text-center font-normal text-primary dark:text-white mt-2">
+                <strong>Additional Experimental Visualizations.</strong> Our provides further visual examples from our experiments, showcasing the effectiveness and versatility of our approach in various scenarios.
+            </figcaption>
+
+            <!-- Add JavaScript for carousel functionality -->
+            <script>
+                let currentSlide = 0;
+                const slides = document.querySelectorAll('.vertical-carousel-slide');
+                const totalSlides = slides.length;
+                const prevButton = document.querySelector('.vertical-carousel-button.prev');
+                const nextButton = document.querySelector('.vertical-carousel-button.next');
+                const dots = document.querySelectorAll('.vertical-dot');
+
+                function showSlide(index) {
+                    if (index >= totalSlides) {
+                        currentSlide = 0;
+                    } else if (index < 0) {
+                        currentSlide = totalSlides - 1;
+                    } else {
+                        currentSlide = index;
+                    }
+
+                    // Move carousel wrapper
+                    const offset = -currentSlide * (100 / totalSlides);
+                    document.querySelector('.vertical-carousel-wrapper').style.transform = `translateX(${offset}%)`;
+
+                    // Update dots
+                    dots.forEach(dot => dot.classList.remove('bg-opacity-100'));
+                    dots[currentSlide].classList.add('bg-opacity-100');
+                }
+
+                prevButton.addEventListener('click', () => {
+                    showSlide(currentSlide - 1);
+                });
+
+                nextButton.addEventListener('click', () => {
+                    showSlide(currentSlide + 1);
+                });
+
+                dots.forEach((dot, index) => {
+                    dot.addEventListener('click', () => {
+                        showSlide(index);
+                    });
+                });
+
+                // Initialize first slide
+                showSlide(currentSlide);
+            </script>
+
+
+
+
+            <div class="space-y-1 pt-10" id="Haiku Enhancement">
+                <h1 class="title" style="color: white; font-size: 1.25rem; font-weight: 600; line-height: 1.125; text-align: left;">
                     Haiku Enhancement
                 </h1>
                 <p class="text-justify block font-normal"></p>
